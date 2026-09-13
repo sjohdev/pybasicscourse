@@ -24,9 +24,9 @@ class TextAnalyzer(object):
             return 0
             
 # User example:        
-myAnal = TextAnalyzer("One two one oNe tWo thREE")
-myDict = myAnal.freqAll()
+myAnalyzer = TextAnalyzer("One two one oNe tWo thREE")
+myDict = myAnalyzer.freqAll()
 myWord = "Z"
-myCount = myAnal.freqOf(myWord)
-print(list(myAnal.freqAll().items()))
+myCount = myAnalyzer.freqOf(myWord)
+print(list(myAnalyzer.freqAll().items()))
 print(f"\"{myWord}\" is used {myCount} times.")
